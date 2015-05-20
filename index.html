@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-cn" tn-launch-app="triton.studio.paper">
+<head>
+    
+<title>test</title>
+<meta charset="UTF-8">
+<base target="_top"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="x-rim-auto-match" content="none">
+
+<script>
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+
+    <meta name="title" content=""/>
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script id="__pre_data">
+        window.globalConstants = window.globalConstants || {};
+
+        globalConstants.promptTextEditing = {
+            'DIAOYONG_DEFAULT': '点击文字进行编辑，点击图片区域在“我的图库”中选择图片，点击配色更改颜色，点击完成开始复制'
+        };
+        globalConstants.promptTextCopying = {
+            'Macintosh'    : '⌘+C 复制模板到剪贴板，然后⌘+V 粘贴到微信的图文消息编辑器中',
+            'Windows'      : 'Ctrl+C 或鼠标右键复制模板到剪贴板，然后Ctrl+V 粘贴到微信的图文消息编辑器中',
+            'DIAOYONG_DEFAULT': '复制模板到剪贴板，然后粘贴到微信的图文消息编辑器中'
+        };
+        globalConstants.statusPromptTexts = {
+            "NOTHING"                 : "",
+            "CONFIRM_CLEAR"           : "清除全部编辑内容吗？",
+            "CONFIRM_CLOSE"           : "您正在编辑文章",
+            "CONFIRM_DROP"            : "您正在编辑文章，确定离开当前的文章吗？",
+            "ASSET_SAVE_OK"           : "图片已保存在您的图库中。您还可以继续添加。",
+            "ASSET_SAVE_ON_GOING"     : "努力记住您的图片中...",
+            "ASSET_SAVE_FAILED"       : "出错啦！",
+            "ASSET_SAVE_NOT_WXLINK"   : "您获取图片链接的方式错了！请参考上方教程。",
+            "ASSET_SAVE_NOT_LINK"     : "您输入的不是链接吧？请输入图片链接哦！",
+            "ASSET_SAVE_NOT_IMAGE"    : "您提交的不是图片哦！",
+            "ASSET_SAVE_NOT_LOGIN"    : "登陆以后才可以保存图片链接哦。",
+            "ASSET_SAVE_INVALID_LINK" : "您提交的链接无效！",
+            "ASSET_OUT_OF_LIMIT"      : "不能上传更多图片了，点击个人头像进入账号设置，升级用户等级吧。",
+            "ASSET_OUT_OF_SIZE"       : "上传的图片文件大小不能超过{0}！",
+            "ASSET_ALREADY_EXIST"     : "您已经上传过该图片了！",
+            "ASSET_FILE_TYPE_INVALID" : "您上传的文件格式不支持！",
+            "FRAGMENTS_NO_CONTENT"    : "没有东西可保存哟",
+            "FRAGMENTS_SAVE_NOT_LOGIN": "登录后就可以保存了哟",
+            "FRAGMENTS_OUT_OF_LIMIT"  : "您最多只能创建{0}个模板，点击个人头像进入账号设置，升级用户等级吧。",
+            "FRAGMENTS_FAILED"        : "收藏模板出错了！",
+            "FRAGMENTS_OK"            : "收藏模板成功！",
+            "SHOW_SAVE_ON_GOING"      : "正在保存，请不要关闭浏览器。",
+            "SHOW_SAVE_OK"            : "成功啦！",
+            "SHOW_SAVE_NOT_LOGIN"     : "登陆以后才可以保存图文哦",
+            "SHOW_SAVE_NO_PAGE"       : "你还没创建任何内容哦",
+            "SHOW_SAVE_OUT_OF_LIMIT"  : "不能创建更多图文了",
+            "SHOW_SAVE_DATA_REJECTED" : "保存失败：您用了不合法的链接或内容哦",
+            "SHOW_SAVE_FAILED"        : "保存失败：出错啦！",
+            "SHOW_SAVE_INVALID_LINK"  : "保存失败：页面中包含非法链接",
+            "SHOW_PAGE_OUT_OF_LIMIT"  : "不能创建更多单元了，点击个人头像进入账号设置，升级用户等级吧。"
+        };
+        globalConstants.tplListApi = '/api/templates/list';
+        globalConstants.imgListApi = '/api/asset/list/image';
+        globalConstants.upImageMaxSize = "1048576";
+    </script>
+
+    
+
+    <script id="__delete_pre_data">
+    var __pre_data = document.getElementById('__pre_data');
+    if (!!__pre_data) {
+        __pre_data.parentNode.removeChild(__pre_data);
+    }
+    var __pre_connect = document.getElementById('__pre_connect');
+    if (!!__pre_connect) {
+        __pre_connect.parentNode.removeChild(__pre_connect);
+    }
+    var __delete_pre_data = document.getElementById('__delete_pre_data');
+    if (!!__delete_pre_data) {
+        __delete_pre_data.parentNode.removeChild(__delete_pre_data);
+    }
+</script>
+</head>
+<body class="editor-body tn-transition-end tn-studio-paper">
+
+<div class="container container-full-fill" ng-controller="DeskController"
+     ng-class="status.minimalSidebar ? 'minimal-sidebar' : ''"
+     ng-mousedown="tryToStopEditing($event)" ng-dblclick="tryToStopEditing($event)">
+
+   
+    <!-- header END -->
+
+    <div class="logo"><img src="http://7xi8pt.com2.z0.glb.qiniucdn.com/logo.png" alt=""></div>
+
+    <div ng-view ng-show="false"></div>
+
+    <section class="x3-sidebar-panel" stop-propagation="click mousedown"
+             ng-controller="SideBarListController">
+        <div class="x3-sidebar-tool text-right">
+            <a href="#" class="x3-sidebar-tool-list">模块列表</a>
+            <!-- <a href="javascript:void(0)"><span class="hide-sidebar" ng-click="onMiniSidebarClicked()"></span></a> -->
+        </div>
+        <tabset class="x3-sidebar" vertical="true" type="pills" ng-cloak>
+            <tab class="x3-tab-item" ng-click="onTabItemClicked()"
+                 active="actives['templates']"
+                 ng-controller="TemplateListController">
+                <tab-heading class="templates">
+    <span class="icon"></span>
+    <span class="name">系统模板</span>
+</tab-heading>
+<div class="tpl-color-panel">
+    <ul class="tpl-color-list list-unstyled">
+    <li class="op-color-item" ng-repeat="clr in colors"
+        ng-click="onColorSelected($index)" ng-cloak>
+        <div class="full-fill-a op-color-item-clr"
+             ng-style="{ 'background-color': clr }">
+        </div>
+    </li>
+    <li>
+        <spectrum-colorpicker ng-model="customColor" options="colorPickerOpts">
+        </spectrum-colorpicker>
+    </li>
+</ul>
+</div>
+<accordion class="x3-tab-content templates x3-tpl-list sim-weixin-context-resizable"
+           close-others="false">
+    <accordion-group class="tpl-room panel-primary"
+                     ng-repeat="room in partsHouse.rooms"
+                     ng-show="!(room.obsolete)"
+                     is-open="room.open">
+        <accordion-heading>
+            <span ng-bind="room.name"></span>
+            <span ng-if="__show_template_id" ng-bind="room.roomId" style="color: white; background: #444;"></span>
+            <i class="pull-right glyphicon"
+               ng-class="{ 'glyphicon-chevron-down': room.open, 'glyphicon-chevron-right': !room.open }"></i>
+        </accordion-heading>
+        <div class="x3-tpl-container"
+             ui-sortable="tplSortableOpts" ng-model="room.items">
+            <section class="tpl-item template clearfix"
+                     ng-repeat="item in room.items"
+                     ng-show="!(item.obsolete)"
+                     ng-click="onItemSelect($parent.$index, $index)"
+                     ng-cloak>
+                <div ng-if="__show_template_id" ng-bind="item.templateId"
+                     style="z-index: 100; color: white; background: #444;">
+                </div>
+                <div class="full-fill-r" ng-if="!(item.obsolete)">
+                    <tn-page-loader page="item" theme="themeEnv.currentTheme"
+                                    template-path="{{ partsHouse.path }}" tn-page-show-with-transition="false">
+                    </tn-page-loader>
+                </div>
+            </section>
+        </div>
+    </accordion-group>
+</accordion>
+            </tab>
+            <tab class="x3-tab-item" ng-click="onTabItemClicked()"
+                 active="actives['fragments']"
+                 ng-controller="FragmentListController">
+                <tab-heading class="fragments">
+    <span class="icon"></span>
+    <span class="name">我的收藏</span>
+</tab-heading>
+<div class="x3-tab-content fragments sim-weixin-context-resizable">
+    <div class="no-content-prompt text-center" ng-if="!status.auth.userInfo">
+        登录后可以将编辑的内容收藏哦
+    </div>
+    <div class="no-content-prompt text-center" ng-if="!!status.auth.userInfo && !(fragments.length !== 0)">
+        您可以将编辑好的内容加入收藏
+    </div>
+
+    <div class="x3-fragments-list"
+         ui-sortable="fgSortableOpts" ng-model="fragments">
+        <section class="tpl-item fragment clearfix"
+                 ng-repeat="fg in fragments"
+                 ng-click="onFragmentSelect($index)"
+                 ng-cloak>
+            <span class="bar-item remove glyphicon glyphicon-trash"
+                  ng-click="onFragmentRemove($event, $index)">
+            </span>
+
+            <div class="has-error" ng-if="!!fg.error">
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+                出错了! :(
+            </div>
+            <tn-page-loader ng-repeat="slice in fg.data.slices" page="slice"
+                            theme="(slice.themeColor | clr2theme) || (slice.themeId | id2theme) || themeEnv.currentTheme"
+                            template-path="{{ templatesRootPath }}">
+            </tn-page-loader>
+        </section>
+    </div>
+</div>
+            </tab>
+            <tab class="x3-tab-item" ng-click="onTabItemClicked()"
+                 active="actives['assetImages']"
+                 ng-controller="ImageListController">
+                <tab-heading class="images">
+    <span class="icon"></span>
+    <span class="name">我的图库</span>
+</tab-heading>
+<div class="x3-tab-content images clearfix">
+    <div class="col-xs-12 col-sm-12 text-center">
+        <p class="col-xs-12 col-sm-12">
+            <button class="col-xs-12 col-sm-12 btn btn-green" ng-disabled="!status.auth.userInfo" ng-click="onAddImageLinkClick($event)" ng-cloak>添加图片URL</button>
+        </p>
+
+        <p class="col-xs-12 col-sm-12">
+            添加图片URL教程
+            <a class="no-decoration diaoyong-red" href="http://diaoyong.com/youlink" target="_blank">点击这里</a>
+        </p>
+
+        <p class="col-xs-12 col-sm-12">
+            添加视频教程
+            <a class="no-decoration diaoyong-red"
+               href="http://diaoyong.com/youlink" target="_blank">
+                点击这里
+            </a>
+        </p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 text-center tn-assets-uploader">
+        <input id="imageFileUploadInput" type="file" multiple class="form-control"
+               accept="image/jpeg, image/png, image/gif"
+               files-model="imageFiles" file-change="uploadImageFiles()" ng-cloak>
+
+        <p class="col-xs-12 col-sm-12">
+            <a class="btn btn-green col-xs-12 col-sm-12" role="button"
+               ng-disabled="!status.auth.userInfo || uploading"
+               alias-as="#imageFileUploadInput" alias-event="click">
+                上传图片(可多选)
+            </a>
+        </p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 no-content-prompt text-center"
+         ng-if="!status.auth.userInfo">
+        <hr/>
+        登录后可以使用图库功能哦
+    </div>
+    <div class="col-xs-12 col-sm-12 no-content-prompt text-center"
+         ng-if="!!status.auth.userInfo && !(images.length !== 0)">
+        <hr/>
+        还没有图片呢，点击上面的按钮添加
+    </div>
+
+    <br/>
+
+    <ul class="list-style-none col-xs-12 col-sm-12">
+        <li class="tpl-item image clearfix"
+            ng-repeat="im in images | reverse"
+            ng-show="im.show"
+            ng-click="onImageSelect($index, true)" ng-cloak>
+            <span ng-class="status.editingState.editing ? 'highlight' : 'non-highlight'">
+                <span class="bar-item remove glyphicon glyphicon-trash"
+                      ng-click="onImageRemove($event, $index, true)"></span>
+                <img ng-src="{{ im.thumb }}" title="编辑区添加图片模板，点击图片区域可以更换图片。"
+                     ui-draggable="true" drag="im">
+            </span>
+        </li>
+    </ul>
+</div>
+
+            </tab>
+            <!--
+            <tab class="x3-tab-item" ng-click="onTabItemClicked()">
+                <tab-heading class="themes">
+                    <span class="icon"></span>
+                    <span class="name">配色方案</span>
+                </tab-heading>
+            </tab>
+            -->
+        </tabset>
+    </section>
+    <!-- sidebar-panel END -->
+
+    <div class="tn-note-panel">
+        <div class="alert tn-note-message text-center"
+             ng-class="messages.levelClass" ng-show="messages.showTips" ng-cloak>
+            <span ng-bind="messages.tipsText"></span>
+        </div>
+    </div>
+
+
+
+    <div class="x3-nav-op-buttons x3-with-right-panel full-fill-a text-center"
+         ng-controller="PaperActionOpButtonController" ng-cloak>
+        <button class="btn-img op-btn trashcan" ng-if="false"
+                ng-disabled="!!status.isCopyMode"
+                tooltip-placement="bottom" tooltip="清空编辑的内容" tooltip-popup-delay="800"
+                ng-click="onBtnClickTrashcan()">
+            <span class="op-btn-inset-icon"></span>
+        </button>
+        <button class="btn-img op-btn save" ng-if="false"
+                ng-disabled="!!status.isCopyMode"
+                tooltip-placement="bottom" tooltip="加入我的收藏" tooltip-popup-delay="800"
+                ng-click="onBtnClickSaveFragment()">
+            <span class="op-btn-inset-icon"></span>
+        </button>
+        <button class="btn-img op-btn preview"
+                ng-class="!!status.isPreviewMode && !status.isCopyMode ? 'active' : ''"
+                ng-disabled="!!status.isCopyMode"
+                tooltip-placement="bottom" tooltip="保存并预览图文" tooltip-popup-delay="800"
+                ng-click="onBtnClickPreview()">
+            <span class="op-btn-inset-icon"></span>
+        </button>
+        <button class="btn-img op-btn save"
+                ng-disabled="!!status.isCopyMode"
+                tooltip-placement="bottom" tooltip="保存当前图文" tooltip-popup-delay="800"
+                ng-click="onBtnClickSave()">
+            <span class="op-btn-inset-icon"></span>
+        </button>
+        <button class="btn-img op-btn done"
+                ng-class="!!status.isCopyMode ? 'active' : ''"
+                tooltip-placement="bottom" tooltip="拷贝到微信编辑器" tooltip-popup-delay="800"
+                ng-click="onBtnClickDone()">
+            <span class="op-btn-inset-icon"></span>
+        </button>
+        <div class="btn-dropdown op-more btn-group">
+            <button class="btn-img op-btn more" data-toggle="dropdown"
+                    tooltip-placement="right" tooltip="更多操作" tooltip-popup-delay="800">
+                <span class="op-btn-inset-icon"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="javascript:void(0)"
+                       ng-disabled="!!status.isCopyMode"
+                       ng-click="onBtnClickSaveFragment()">
+                        <span class="glyphicon glyphicon-star"></span>
+                        加入我的收藏
+                    </a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="javascript:void(0)"
+                       ng-disabled="!!status.isCopyMode"
+                       ng-click="onBtnClickTrashcan()">
+                        <span class="glyphicon glyphicon-trash"></span>
+                        清空编辑的内容
+                    </a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="javascript:void(0)"
+                       ng-disabled="!!status.isCopyMode"
+                       ng-click="onBtnClickCreateNew()">
+                        <span class="glyphicon glyphicon-file"></span>
+                        新建一个图文
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="javascript:void(0)"
+                       ng-disabled="!!status.isCopyMode"
+                       ng-click="onBtnClickSaveAs()">
+                        <span class="glyphicon glyphicon-floppy-save"></span>
+                        另存一个图文
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="x3-editing-panel" ng-controller="PaperEditingController">
+
+        <script type="text/ng-template" id="previewDialog.html">
+    <div class="tn-preview-dialog modal-header text-center">
+        <h4 class="modal-title">扫描二维码手机预览，或点击链接直接打开</h4>
+    </div>
+    <div class="tn-preview-dialog modal-body text-center">
+        <qrcode qr-data="showInfo.show_url" qr-size="180"
+                qr-foreground="#6c6d6f" qr-background="white"></qrcode>
+        <hr/>
+        <input class="tn-show-link-area form-control-static form-control" type="text" readonly="true"
+               auto-focus-on="mouseover" auto-select-on="mouseover"
+               act-as-link href="{{ showInfo.show_url }}" value="{{ showInfo.show_url }}" ng-cloak>
+    </div>
+</script>
+
+        
+
+        <div class="inner container">
+
+
+
+            <section class="row container-fluid x3-with-right-panel tn-before-footer text-center" id="conteiner">
+                <div class="alert alert-danger alert-dismissible x3-compitable-prompt" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    如您无法正常操作，请使用兼容浏览器：<br>谷歌Chrome浏览器，微软的IE浏览器需要版本10或者更高，360浏览器的极速模式，或者Mac下的Safari
+                </div>
+
+                <div class="alert alert-info alert-dismissible x3-operate-prompt"
+                     ng-show="status.isCopyMode" ng-cloak>
+                    <button type="button" class="close" data-dismiss="alert"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <span ng-bind="globalConstants.promptTextCopying | selectByUserAgent"></span>
+                    <p style="color: rgb(249, 110, 87);">为保证正确拷贝，请使用同一个浏览器打开调用与微信后台</p>
+                </div>
+
+                <section class="row x3-show-meta-panel text-center x3-top-one" ng-cloak>
+                    <form class="form-horizontal" role="form">
+                        <div class="inner">
+                            <div class="input-group">
+                                <span class="input-group-addon label-title">标题</span>
+                                <input type="text" class="form-control" placeholder="图文标题" ng-model="showData.title">
+                            </div>
+                            <br/>
+
+                            <div class="input-group">
+                                <span class="input-group-addon label-desc">描述</span>
+                                <input type="text" class="form-control" placeholder="微信分享时的描述" ng-model="showData.desc">
+                            </div>
+
+                            <div class="form-group" ng-if="false">
+                                <label for="showTitle" class="col-sm-3 control-label">图文标题：</label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="showTitle"
+                                           ng-model='showData.title' required
+                                           placeholder="请输入这篇图文的标题">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section tn-page-box class="row tn-main-zone text-center
+            tn-hide-when-editing-active tn-show-when-editing-active tn-hide-when-enter-editing-active"
+         ng-controller="PageActionController">
+
+    <div class="x3-paper-wrapper col-xs-12 col-sm-12 col-md-12"
+         ng-controller="PaperBasicController" ng-cloak>
+
+        <div class="x3-append-new-slice-box"
+             ng-show="displayNewSlicePanel" ng-click="onPanelClick($event)"
+             ng-controller="AppendNewSliceController">
+            <div class="x3-append-new-slice-panel"
+                 ng-style="{ left: barLoc.left, top: barLoc.top, width: barLoc.width }" ng-cloak>
+            <span class="new-item copy glyphicon"
+                  tooltip-placement="top" tooltip="复制当前内容" tooltip-popup-delay="800"
+                  ng-click="onAppendNewSlice($event, 'copy', whereToAppendNewSlice)"></span>
+            <span class="new-item text glyphicon"
+                  tooltip-placement="top" tooltip="插入正文" tooltip-popup-delay="800"
+                  ng-click="onAppendNewSlice($event, 'text', whereToAppendNewSlice)"></span>
+            <span class="new-item image glyphicon"
+                  tooltip-placement="top" tooltip="插入图片" tooltip-popup-delay="800"
+                  ng-click="onAppendNewSlice($event, 'image', whereToAppendNewSlice)"></span>
+            </div>
+        </div>
+
+        <div class="x3-paper sim-weixin-context x3-paper-dock"
+             ng-class="status.isPreviewMode ? 'preview' : 'editing'"
+             ui-sortable="sliceSortableOpts" ng-model="slices">
+            &nbsp;
+
+            <div class="full-fill-a x3-slice-placeholder" ng-if="slices.length == 0">
+                <div class="full-fill-r center-v">
+                    <div class="inner">
+                        &#x02190; 选择模板
+                    </div>
+                </div>
+            </div>
+
+            <div class="x3-slice-plate clearfix"
+                 ng-repeat="slice in slices" tn-slice-bus-props-editable
+                 on-click-editable="onEditableClick($index, editableDesc, editableElem)">
+                <span class="bar-item move glyphicon glyphicon-move" ng-cloak>
+                </span>
+                <span class="bar-item delete glyphicon glyphicon-trash"
+                      ng-click="removeSlice($event, $index)" ng-cloak>
+                </span>
+
+                <span class="bar-item insert glyphicon glyphicon-plus"
+                      ng-click="appendSlice($event, $index)" ng-cloak>
+                </span>
+
+                <div class="tn-slice-loader"
+                     tn-page-loader page="slice" tn-page-show-with-transition="true"
+                     theme="(slice.themeColor | clr2theme) || (slice.themeId | id2theme) || themeEnv.currentTheme"
+                     template-path="{{ templateRootPath }}"
+                     on-click-editable="onEditableClick($index, editableDesc, editableElem)"
+                     on-drop-asset-to-editable="onAssetDrop($index, editableDesc, editableElem, asset)">
+                </div>
+            </div>
+
+            &nbsp;
+        </div>
+
+        <div class="x3-paper sim-weixin-context x3-paper-projection"
+             ng-click="onPrjClick($event)" ng-mouseenter="onPrjMouseEnter($event)"
+             stop-propagation="mousedown mouseup mouseover keydown keyup contextmenu click dblclick">
+            <div class="inner" ng-copy="onPrjCopy($event)"></div>
+        </div>
+
+        <div class="x3-content-prompt" ng-bind="box.prompt"></div>
+
+    </div>
+
+    <div tn-operator-box ng-show="status.editingState.editing" ng-cloak>
+        <div ng-controller="BgSetOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown dblclick" class="tn-op-view-bg-set">
+        <span class="up-triangle"></span>
+        <span class="up-triangle-inner"></span>
+        <div class="border-form">
+            <div class="arrow-left" ng-click="arrowLeftClicked($event)" ng-show="showLeftArrow"></div>
+            <div class="arrow-right" ng-click="arrowRightClicked($event)" ng-show="showRightArrow"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" ng-repeat="bg in data.bgs" finish-repeat-with-event="bgSetRepeatFinish">
+                        <div class="bg-item" ng-click="bgClicked($index, $event)"
+                             ng-style="{ 'width': bg.editableWidth, 'height': bg.editableHeight, 'background-image': 'url(' + bg.editable.url + ')',
+                             'background-position-x': bg.editable.posX, 'background-position-y' : bg.editable.posY,
+                             'background-repeat': 'no-repeat', 'background-size': bg.editable.backgroundSize }">
+                            <span class="remove glyphicon glyphicon-trash"
+                                  ng-click="removeButtonClicked($event, $index)">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="add-button" ng-click="addButtonClicked()">
+                            <div class="inner">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="TextOperatorController" ng-show="editing">
+    <div class="tn-op-view-txt-attr"
+         tn-operator tn-op-position tn-op-frame="barLoc" ng-show="attrBarVisible"
+         stop-propagation="click mousedown dblclick clearfix">
+        <div class="op-bar-sec font-size">
+            <!--<span class="title">字号</span>-->
+            <span class="size-handle btn-group" dropdown
+                  on-toggle="onSizeHandleToggled(open)"
+                  is-open="opState.sizeSelecting">
+                <input type="text" class="form-control size-input"
+                       ng-model="data.fontSize" ng-change="onFontSizeChanged()"/>
+                <button type="button" class="btn btn-default dropdown-toggle">
+                    <span class="glyphicon glyphicon-play"></span>
+                    <span class="sr-only">Split button!</span>
+                </button>
+                <ul class="dropdown-menu size-menu" role="menu">
+                    <li ng-repeat="sz in sizes">
+                        <span class="item" ng-bind="sz" ng-click="onSizeSelected($index)"></span>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="op-bar-sec font-color">
+            <div class="color-handle" ng-click="onChooseFontColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.fontColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-color" ng-show="data.bgColorEditable">
+            <div class="color-handle" ng-click="onChooseBgColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.backgroundColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-color" ng-show="data.borderColorEditable">
+            <div class="color-handle" ng-click="onChooseBorderColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.borderColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-misc-style">
+            <span class="font-misc-handle" dropdown
+                  on-toggle="onFontMiscToggled(open)"
+                  is-open="opState.fontMiscSelecting">
+                <button type="button" class="btn btn-default dropdown-toggle">
+                    <span class="misc-handle-btn">
+                    </span>
+                </button>
+                <ul class="dropdown-menu misc-menu" role="menu">
+                    <li role="presentation">
+                        <div class="btn-group-vertical" ng-click="onTextAlignSelect()">
+                            <label class="btn btn-primary align-left" ng-model="data.textAlign" btn-radio="'left'">
+                                左对齐
+                            </label>
+                            <label class="btn btn-primary align-center" ng-model="data.textAlign" btn-radio="'center'">
+                                居中对齐
+                            </label>
+                            <label class="btn btn-primary align-right" ng-model="data.textAlign" btn-radio="'right'">
+                                右对齐
+                            </label>
+                            <label class="btn btn-primary align-center" ng-model="data.textAlign" btn-radio="'justify'">
+                                两 端 对 齐
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                        <div class="btn-group-vertical" ng-click="onTextStyleSelect()">
+                            <label class="btn btn-primary" ng-model="data.textStyle.bold" btn-checkbox>
+                                <b>粗体</b>
+                            </label>
+                            <label class="btn btn-primary" ng-model="data.textStyle.italic" btn-checkbox>
+                                <i>斜体</i>
+                            </label>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </span>
+        </div>
+        <div class="op-bar-sec adv-edit"
+             ng-class="{ 'active': opState.advanceEditing }" ng-click="onToggleAdvEditor()">
+            高级
+        </div>
+        <div class="op-bar-popup op-color-selector" ng-show="opState.colorSelecting">
+            <ul class="tpl-color-list list-unstyled">
+    <li class="op-color-item" ng-repeat="clr in colors"
+        ng-click="onColorSelected($index)" ng-cloak>
+        <div class="full-fill-a op-color-item-clr"
+             ng-style="{ 'background-color': clr }">
+        </div>
+    </li>
+    <li>
+        <spectrum-colorpicker ng-model="customColor" options="colorPickerOpts">
+        </spectrum-colorpicker>
+    </li>
+</ul>
+        </div>
+    </div>
+    <div class="tn-op-view-txt-adv-edit" ng-show="opState.advanceEditing"
+         tn-operator tn-op-location tn-op-frame="ueLoc"
+         stop-propagation="click mousedown dblclick clearfix">
+        <div tn-ueditor ng-model="data.htmlContent"
+             editor-ready="onUEReady(ue)"
+             selection-change="onUESelChanged(ue)">
+        </div>
+    </div>
+</div>
+
+<div ng-controller="RichTextOperatorController" ng-show="editing">
+    <div class="tn-op-view-txt-attr"
+         tn-operator tn-op-position tn-op-frame="barLoc" ng-show="attrBarVisible"
+         stop-propagation="click mousedown dblclick clearfix">
+        <div class="op-bar-sec font-size">
+            <!--<span class="title">字号</span>-->
+            <span class="size-handle btn-group" dropdown
+                  on-toggle="onSizeHandleToggled(open)"
+                  is-open="opState.sizeSelecting">
+                <input type="text" class="form-control size-input"
+                       ng-model="data.fontSize" ng-change="onFontSizeChanged()"/>
+                <button type="button" class="btn btn-default dropdown-toggle">
+                    <span class="glyphicon glyphicon-play"></span>
+                    <span class="sr-only">Split button!</span>
+                </button>
+                <ul class="dropdown-menu size-menu" role="menu">
+                    <li ng-repeat="sz in sizes">
+                        <span class="item" ng-bind="sz" ng-click="onSizeSelected($index)"></span>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="op-bar-sec font-color">
+            <div class="color-handle" ng-click="onChooseFontColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.fontColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-color" ng-show="data.bgColorEditable">
+            <div class="color-handle" ng-click="onChooseBgColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.backgroundColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-color" ng-show="data.borderColorEditable">
+            <div class="color-handle" ng-click="onChooseBorderColor()">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.borderColor }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-sec font-misc-style">
+            <span class="font-misc-handle" dropdown
+                  on-toggle="onFontMiscToggled(open)"
+                  is-open="opState.fontMiscSelecting">
+                <button type="button" class="btn btn-default dropdown-toggle">
+                    <span class="misc-handle-btn">
+                    </span>
+                </button>
+                <ul class="dropdown-menu misc-menu" role="menu">
+                    <li role="presentation">
+                        <div class="btn-group-vertical" ng-click="onTextAlignSelect()">
+                            <label class="btn btn-primary align-left" ng-model="data.textAlign" btn-radio="'left'">
+                                左对齐
+                            </label>
+                            <label class="btn btn-primary align-center" ng-model="data.textAlign" btn-radio="'center'">
+                                居中对齐
+                            </label>
+                            <label class="btn btn-primary align-right" ng-model="data.textAlign" btn-radio="'right'">
+                                右对齐
+                            </label>
+                            <label class="btn btn-primary align-center" ng-model="data.textAlign" btn-radio="'justify'">
+                                两 端 对 齐
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                        <div class="btn-group-vertical" ng-click="onTextStyleSelect()">
+                            <label class="btn btn-primary" ng-model="data.textStyle.bold" btn-checkbox>
+                                <b>粗体</b>
+                            </label>
+                            <label class="btn btn-primary" ng-model="data.textStyle.italic" btn-checkbox>
+                                <i>斜体</i>
+                            </label>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </span>
+        </div>
+        <div class="op-bar-sec adv-edit"
+             ng-class="{ 'active': opState.advanceEditing }" ng-click="onToggleAdvEditor()">
+            高级
+        </div>
+        <div class="op-bar-popup op-color-selector" ng-show="opState.colorSelecting">
+            <ul class="tpl-color-list list-unstyled">
+    <li class="op-color-item" ng-repeat="clr in colors"
+        ng-click="onColorSelected($index)" ng-cloak>
+        <div class="full-fill-a op-color-item-clr"
+             ng-style="{ 'background-color': clr }">
+        </div>
+    </li>
+    <li>
+        <spectrum-colorpicker ng-model="customColor" options="colorPickerOpts">
+        </spectrum-colorpicker>
+    </li>
+</ul>
+        </div>
+    </div>
+    <div class="tn-op-view-txt-adv-edit" ng-show="opState.advanceEditing"
+         tn-operator tn-op-location tn-op-frame="ueLoc"
+         stop-propagation="click mousedown dblclick clearfix">
+        <div tn-ueditor ng-model="data.htmlContent"
+             editor-ready="onUEReady(ue)"
+             selection-change="onUESelChanged(ue)">
+        </div>
+    </div>
+</div>
+
+<div ng-controller="BgOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="imgLoc"
+         stop-propagation="click mousedown"
+         class="tn-op-view-bg-img">
+        <div tn-op-handle="surface" tn-op-action="opActMove(handle, action, param)"
+             ui-on-drop="onAssetDropToOp($data)">
+            <div class="op-img-edit-prompt" ng-show="data.showPrompt">
+                “我的图库”中选择图片
+            </div>
+            <div class="op-bg-edit-prompt">
+                <div class="prompt-triangle" ng-show="data.showPrompt"></div>
+                <div class="prompt-text" ng-show="data.showPrompt">此模板需要使用外链图片，暂不支持本地上传图片</div>
+            </div>
+        </div>
+        <div tn-op-handle="lt" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="rt" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="rb" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="lb" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="l" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="r" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="t" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="b" tn-op-action="opActResize(handle, action, param)"></div>
+    </div>
+</div>
+
+<div ng-controller="ImageOperatorController" ng-show="editing">
+    <div class="tn-op-view-img" tn-operator
+         tn-op-location tn-op-frame="imgLoc" ng-hide="changingSource"
+         stop-propagation="click mousedown">
+        <div tn-op-handle="surface" tn-op-action="opActMove(handle, action, param)"
+             ui-on-drop="onAssetDropToOp($data)">
+            <div class="op-img-edit-prompt">
+                “我的图库”中选择图片
+            </div>
+         </div>
+        <!--
+        <div tn-op-handle="lt" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="rt" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="rb" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="lb" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="l" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="r" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="t" tn-op-action="opActResize(handle, action, param)"></div>
+        <div tn-op-handle="b" tn-op-action="opActResize(handle, action, param)"></div>
+        -->
+    </div>
+</div>
+
+<div ng-controller="ParamOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown"
+         class="tn-op-view-param">
+        <div class="inline-form">
+            <div class="form-group">
+                <label class="control-label">参数</label>
+                <select class="form-control" ng-model="data.selected"
+                        ng-options="param.name for param in data.params"
+                        ng-change="onSelectChange()"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="">内容</label>
+                <input class="form-control" type="text" ng-model="data.selected.info"
+                       ng-change="onInfoChange()"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="LinkOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown" class="tn-op-view-link">
+        <div tn-op-handle="surface" tn-op-action="opActMove(handle, action, param)"
+             ui-on-drop="onAssetDropToOp($data)">
+            <div class="op-img-edit-prompt">
+                “我的图库”中选择图片
+            </div>
+        </div>
+
+        <div class="hint">
+            <span class="up-triangle"></span>
+            <span class="up-triangle-inner"></span>
+            <div class="border-form">
+                <div class="form-group">
+                    <label class="control-label">请输入链接</label>
+                    <input class="form-control" type="text" ng-model="data.url"
+                           ng-change="onInfoChange()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div ng-controller="BusPropsOperatorController" ng-show="editing">
+    <div tn-operator tn-op-position tn-op-frame="barLoc" ng-show="attrBarVisible"
+         stop-propagation="click mousedown dblclick clearfix"
+         class="tn-op-view-bus-props">
+        <div class="op-bar-sec" ng-repeat="eoId in data.eoIdList">
+            <div class="color-handle" ng-click="onColorHandleChoose(eoId, $index)">
+                <div class="full-fill-r color-preview"
+                     ng-style="{ 'background-color': data.colorList[eoId] }">
+                </div>
+            </div>
+        </div>
+        <div class="op-bar-popup op-color-panel" ng-show="opState.colorSelecting">
+            <ul class="tpl-color-list list-unstyled">
+    <li class="op-color-item" ng-repeat="clr in colors"
+        ng-click="onColorSelected($index)" ng-cloak>
+        <div class="full-fill-a op-color-item-clr"
+             ng-style="{ 'background-color': clr }">
+        </div>
+    </li>
+    <li>
+        <spectrum-colorpicker ng-model="customColor" options="colorPickerOpts">
+        </spectrum-colorpicker>
+    </li>
+</ul>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="TelOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown" class="tn-op-view-link">
+        <span class="up-triangle"></span>
+        <span class="up-triangle-inner"></span>
+        <div class="border-form">
+            <div class="form-group">
+                <label class="control-label">请输入电话号码</label>
+                <input class="form-control" type="text" ng-model="data.phoneNumber"
+                       ng-change="onInfoChange()"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="AudioOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown" class="tn-op-view-audio">
+        <div class="checkbox" ng-show="data.enableShowEdit">
+            <input class="op-bar-sec" type="checkbox" id="checkbox1" ng-model="data.showControl" ng-change="onShowChanged()">
+            <label for="checkbox1">显示控件</label>
+        </div>
+        <div class="checkbox">
+            <input class="op-bar-sec" type="checkbox" id="checkbox2" ng-model="data.autoPlay" ng-change="onAutoPlayChanged()">
+            <label for="checkbox2">自动播放</label>
+        </div>
+        <div class="checkbox">
+            <input class="op-bar-sec" type="checkbox" id="checkbox3" ng-model="data.loop" ng-change="onLoopChanged()">
+            <label for="checkbox3">循环播放</label>
+        </div>
+
+        <div class="input-group op-bar-group">
+            <span class="input-group-addon">音乐</span>
+            <input type="text" class="form-control" placeholder="请输入mp3文件链接" ng-model="data.url" ng-change="onUrlChanged()">
+        </div>
+    </div>
+</div>
+
+<div ng-controller="DummyAudioOperatorController">
+</div>
+
+<div ng-controller="QqVideoOperatorController" ng-show="editing">
+    <div tn-operator tn-op-location tn-op-frame="panelLoc"
+         stop-propagation="click mousedown" class="tn-op-view-link">
+        <span class="up-triangle"></span>
+        <span class="up-triangle-inner"></span>
+        <div class="border-form">
+            <div class="form-group">
+                <label class="control-label">请输入腾讯视频通用代码</label>
+                <label class="control-label">
+                    <a class="no-decoration diaoyong-red"
+                       href="http:diaoyong.com/video.html" target="_blank">猛戳教程</a>
+                </label>
+                <input class="form-control" type="text" ng-model="data.url" ng-change="onInfoChange()"
+                       onmouseover="this.select()"/>
+                <label class="verify-label" ng-show="!data.urlValid">不是腾讯视频通用代码</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+</section>
+            </section>
+
+            
+        </div>
+
+    </section>
+    <!-- editing-panel END -->
+
+    <!--
+    <section class="tn-theme-panel container" ng-controller="ThemesController">
+        <div class="name row text-center">
+            配色方案
+        </div>
+        <ul class="row list-unstyled tn-theme-list">
+            <li class="tn-theme-item" ng-repeat="thm in themes"
+                ng-style="{ 'background-color': thm.themeSet.textBgColor }"
+                ng-click="onThemeSelect($index)" ng-cloak>
+            </li>
+            <spectrum-colorpicker ng-model="customColor" options="colorPickerOpts"></spectrum-colorpicker>
+        </ul>
+    </section>
+    -->
+    <!-- theme-panel END -->
+
+ 
+
+
+    <section class="x3-asset-submit-layer full-fill-a" ng-show="status.assetSubmitting"
+             ng-controller="AssetSubmitController" ng-click="onAssetCancel($event)" ng-cloak>
+        <div class="x3-asset-submit-panel container form-group">
+            <div class="center-v col-xs-12 col-sm-12">
+                <form class="inner" name="assetSubmitForm">
+                    <h3 class="row title text-center">提交图片链接</h3>
+
+                    <div class="row input form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <input class="form-control text-center" name="imageUrlInput" type="url"
+                                   ng-model="imageUrl" auto-focus-on="mouseover" auto-select-on="mouseover"
+                                   stop-propagation="click"
+                                   placeholder="粘贴或输入图片链接！（满屏图片建议尺寸：640x1008）">
+                            <button type="submit" class="btn btn-green btn-over-input col-xs-12 col-sm-12"
+                                    ng-click="onAssetSubmit($event)">
+                                <img src="http://7xi8pt.com2.z0.glb.qiniucdn.com/9e2f0a.xry-btn-submit.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row prompt text-center" ng-bind="promptText"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="tn-loading-overlap black full-fill-a"
+             ng-show="status.show.initializing || status.show.loadingData || status.show.updating">
+        <div class="loading">
+            <span class="rolling glyphicon glyphicon-refresh"></span>
+        </div>
+    </section>
+</div>
+
+<section class="tn-scripts">
+    <!-- 3rd -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/ui-bootstrap.min.js"></script>
+    <script src="js/ui-bootstrap-tpls.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+
+    <script src="js/ng-tpl.js"></script>
+    <script src="js/paper.min.js"></script>
+
+</section>
+
+</body>
+</html>

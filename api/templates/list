@@ -1,0 +1,4011 @@
+{
+	"path": "/templates/parts",
+	"rooms": [{
+		"roomId": "001-header",
+		"items": [{
+			"templateId": "001-header/h1",
+			"name": "H1",
+			"desc": "desc for H1",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击一个模板，就会自动加到编辑区最后",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/h2",
+			"name": "H2",
+			"desc": "desc for H2",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "直接拖动模板，可以插入到编辑区域中间",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-01-01",
+			"name": "左对齐标题 t1",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-01-02",
+			"name": "居中标题 t2",
+			"desc": "this is a title center template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-01-03",
+			"name": "左对齐标题 t10",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-08-20",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-01-04",
+			"name": "标题 1",
+			"desc": "this is a ribbon title template",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-01-05",
+			"name": "标题 1",
+			"desc": "this is a ribbon title template",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "第一行标题\n第二行标题",
+					"textAlign": "left",
+					"fontSize": "1.8em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-02-01",
+			"name": "边框标题 t3",
+			"desc": "this is a border title template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-02-02",
+			"name": "缎带标题 1",
+			"desc": "this is a ribbon title template",
+			"author": "the author",
+			"date": "2014-10-10",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-03-01",
+			"name": "下划线标题 t5",
+			"desc": "this is an under line title template",
+			"author": "the author",
+			"date": "2014-08-11",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"fontWeight": "bolder"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-03-02",
+			"name": "序号标题 2",
+			"desc": "this is a numeric title template",
+			"author": "the author",
+			"date": "2014-09-03",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"textAlign": "center",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"fontWeight": "bolder",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#2a343a"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-03-03",
+			"name": "序号标题 1 v1",
+			"desc": "this is a numeric title template",
+			"author": "the author",
+			"date": "2014-08-11",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"fontSize": "3.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#2a343a"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入副标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#878b8c"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-a-03-04",
+			"name": "标题 1",
+			"desc": "this is a ribbon title template",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-01",
+			"name": "斜线标题 1",
+			"desc": "this is a slash line title template",
+			"author": "the author",
+			"date": "2014-10-14",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(42, 52, 58)"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-02",
+			"name": "下划线标题 t11",
+			"desc": "this is an under line title template",
+			"author": "the author",
+			"date": "2014-08-20",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(42, 52, 58)"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-03",
+			"name": "居中 t12",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-09-03",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1.8em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(42, 52, 58)",
+					"backgroundColor": "transparent",
+					"borderColor": "black"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入副标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#787c81"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-04",
+			"name": "居中组合标题 t7",
+			"desc": "this is a central combination title template",
+			"author": "the author",
+			"date": "2014-08-11",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "2.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "标题2",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "#97a3af"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "标题3",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#787c81"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-05",
+			"name": "引号标题 t8",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-08-13",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#2a343a"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-01-06",
+			"name": "标题 1",
+			"desc": "this is a ribbon title template",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "上方标题字多一点",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center"
+				},
+				"rctxt0": {
+					"type": "ed-type-rich-text",
+					"text": "主标题",
+					"textAlign": "center",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontWeight": "bolder",
+					"fontStyle": "normal",
+					"backgroundColor": "rgba(255, 255, 255, 0.992157)"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-10-01",
+			"name": "左对齐标题 t10",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-08-20",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-10-02",
+			"name": "标题卡片 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-09",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入文字",
+					"fontSize": "1em",
+					"textAlign": "center",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#999"
+				},
+				"bdc1": {
+					"type": "border-color",
+					"borderColor": "#c0c8d1"
+				},
+				"bg1": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0Hgny3yn415DwO2TvTMKV6l1rFqkls4dB77fE0XKPp1blNBicRDCnicX3k4ExL29RdpXBwPoxALevAA.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"bg2": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0Hgny3yn415DwO2TvTMKV6lW2GRA9cMaJqX5iaQ7tLhwR2jsEgQsceYSgL9DVgowOsj6swJGgibtGFA.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-11-tips-title-01",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-16",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标题标题",
+					"fontSize": "22px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "标题标题标题",
+					"fontSize": "16px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-12-tips-title-01",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-16",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "22px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "标题标题",
+					"fontSize": "16px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-13-tips-title-01",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-16",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "18px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "标题标题",
+					"fontSize": "16px",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-15-pic-01",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-16",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-16-text",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-16",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-17-four-angle",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-28",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "恭 喜\n发 财",
+					"fontSize": "1.6em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-18-one-angle",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-01-28",
+			"version": "0.1",
+			"editables": {
+				"bgc0": {
+					"type": "bg-color",
+					"backgroundColor": "rgb(142, 201, 101)"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/1PU4ROcfKDQeu3uwXq13d1e0dkjVHdVhicO5bpMAd1RcpZ1JLic2pia55SHrIic5ibXkxOPbHfJoz0ezsZB9aPtTDrg.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"bg1": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/ugnYPLVSd8uekBStR00oYss6ewuKnNic9K084wf55z0rE2bQMQDFwHnAfkw7fLaVRZ8a1WW4qicqoZjYLkdWILGQ.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "<section style='font-size: 2em'>恭</section>",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "<section style='font-size: 2em'>贺</section>",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "<section style='font-size: 2em'>新</section>",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				},
+				"richtext3": {
+					"type": "ed-type-rich-text",
+					"text": "<section style='font-size: 2em'>春</section>",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-19-xin-v1",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-02-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1.5",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-20",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-02-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "一",
+					"fontSize": "1.6em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"color": "white",
+					"baroderColor": "#e18124",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"backgroundColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-21",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-02-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"fontSize": "1.6em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"backgroundColor": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t-b-22",
+			"name": "title",
+			"dasc": "This is an title",
+			"author": "the author",
+			"date": "2015-03-09",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent "
+				}
+			}
+		},
+		{
+			"templateId": "001-header/t9",
+			"name": "空心 t9",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-08-13",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#2a343a"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		}],
+		"name": "标题",
+		"desc": "desc for Headers",
+		"author": "the author",
+		"date": "2014-08-06",
+		"version": "0.1"
+	},
+	{
+		"roomId": "101-body",
+		"items": [{
+			"templateId": "101-body/b1",
+			"name": "body 1",
+			"desc": "desc for body 1",
+			"author": "the author",
+			"date": "2014-08-14",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "正文内容可以多行编辑哟！全角输入两个空格就可以做到首行缩进了。",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "justify",
+					"color": "inherit"
+				}
+			}
+		}],
+		"name": "正文",
+		"desc": "desc for body",
+		"author": "the author",
+		"date": "2014-08-14",
+		"version": "0.1"
+	},
+	{
+		"roomId": "110-image",
+		"items": [{
+			"templateId": "110-image/imgtxt-a-01-01_v1",
+			"name": "image-text a 01 01",
+			"desc": "image-text a 01 01",
+			"author": "the author",
+			"date": "2014-09-01",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-02_v1",
+			"name": "image-text a 01 02",
+			"desc": "image-text a 01 02",
+			"author": "the author",
+			"date": "2014-09-01",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-03_v1",
+			"name": "image-text a 01 03",
+			"desc": "image-text a 01 03",
+			"author": "the author",
+			"date": "2014-09-01",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-04",
+			"name": "image a 01 04",
+			"desc": "image a 01 04",
+			"author": "the author",
+			"date": "2014-10-15",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-10",
+			"name": "image-text a 01 10",
+			"desc": "image-text a 01 10",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "diaoyong\n调用",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框换背景",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-11",
+			"name": "image-text a 01 10",
+			"desc": "image-text a 01 10",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "diaoyong\n调用",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框换背景",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-15-v1",
+			"name": "image-text a 02 02",
+			"desc": "image-text a 02 02",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(52, 54, 60)",
+					"backgroundColor": "transparent",
+					"borderColor": "black"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "请输入内容\n请输入内容",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-16-v1",
+			"name": "image-text a 02 02",
+			"desc": "image-text a 02 02",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(52, 54, 60)",
+					"backgroundColor": "transparent",
+					"borderColor": "black"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "请输入内容\n请输入内容",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": "black"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-17",
+			"name": "image-text a 01 17",
+			"desc": "image-text a 01 17",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"rctxt0": {
+					"type": "ed-type-rich-text",
+					"text": "主要标题",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "right",
+					"color": "inherit",
+					"backgroundColor": "#ffffff"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "次要标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "right"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-01-18",
+			"name": "image-text a 01 17",
+			"desc": "image-text a 01 17",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"rctxt0": {
+					"type": "ed-type-rich-text",
+					"text": "主要标题",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "left",
+					"color": "inherit",
+					"backgroundColor": "#ffffff"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "次要标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "left"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-02-01",
+			"name": "image-text a 02 01",
+			"desc": "image-text a 02 01",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "图片描述",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-02-02",
+			"name": "image-text a 02 02",
+			"desc": "image-text a 02 02",
+			"author": "the author",
+			"date": "2014-08-29",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "外链图片只要外链服务器一直可用，在调用的图库里删除是不受影响的。",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "调用本地上传的图片，用到图文里以后，只要图文保存过，图库里面的就可以删除了。",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-02-03",
+			"name": "image-text a 02 03",
+			"desc": "image-text a 02 03",
+			"author": "the author",
+			"date": "2014-10-30",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"rctxt0": {
+					"type": "ed-type-rich-text",
+					"text": "&#8593;",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "white",
+					"backgroundColor": "black"
+				},
+				"rctxt1": {
+					"type": "ed-type-rich-text",
+					"text": "&#8594;",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "white",
+					"backgroundColor": "black"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "图片描述",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				},
+				"txt1": {
+					"type": "ed-type-text",
+					"text": "图片描述",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-01-v2",
+			"name": "image-text a 03 01",
+			"desc": "image-text a 03 01",
+			"author": "the author",
+			"date": "2014-12-19",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "2em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "副标题",
+					"fontSize": "1.2em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "darkgray",
+					"backgroundColor": "transparent",
+					"borderColor": "darkgray"
+				},
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": " white"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框换背景",
+					"fontSize": "1em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal"
+				},
+				"text3": {
+					"type": "ed-type-text",
+					"text": "描述2",
+					"fontSize": "1em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "darkgray"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-02-v1",
+			"name": "image-text a 03 02",
+			"desc": "image-text a 03 02",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img2": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-03-v2",
+			"name": "image-text a 03 03",
+			"desc": "image-text a 03 03",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "图片描述",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(52, 54, 60)",
+					"backgroundColor": "transparent",
+					"borderColor": "black"
+				},
+				"txt2": {
+					"type": "ed-type-text",
+					"text": "请输入内容\n请输入内容",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-04",
+			"name": "image-text a 03 04",
+			"desc": "image-text a 03 04",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"bg1": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "内容之一",
+					"fontSize": "1.8em",
+					"textAlign": "center",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "点击外边白色\n边框换背景",
+					"fontSize": "1em",
+					"fontFamily": "宋体",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"bgc0": {
+					"type": "bg-color"
+				},
+				"bgc1": {
+					"type": "bg-color"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-05-v2",
+			"name": "image-text a 03 05",
+			"desc": "image-text a 03 05",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框换背景",
+					"fontSize": "1.4em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "rgb(52, 54, 60)"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入内容",
+					"fontSize": "1.2em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"bgc0": {
+					"type": "bg-color"
+				},
+				"bgc1": {
+					"type": "bg-color",
+					"backgroundColor": "rrgba(255,255,255,.9)"
+				},
+				"bdc0": {
+					"type": "border-color"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-06-v2",
+			"name": "image-text a 03 06",
+			"desc": "image-text a 03 06",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"bg1": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击\n外边白色\n边框\n换背景",
+					"fontSize": "1.2em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"bgc0": {
+					"type": "bg-color"
+				},
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-07-v1",
+			"name": "",
+			"desc": "This is an  template",
+			"author": "the author",
+			"date": "2014-11-18",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"fontWeight": "bolder",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入请输入请输入",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入请输入",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"text3": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"text4": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"textAlign": "left",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-08-v1",
+			"name": "image-text a 03 08",
+			"desc": "image-text a 03 08",
+			"author": "the author",
+			"date": "2014-11-21",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"backgroundColor": "transparent"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入请输入\n请输入请输入",
+					"textAlign": "left",
+					"fontSize": "1em ",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-09-v1",
+			"name": "image a 03 09",
+			"desc": "image a 03 09",
+			"author": "the author",
+			"date": "2014-11-21",
+			"version": "0.1",
+			"editables": {
+				"bgc0": {
+					"type": "bg-color",
+					"backgroundColor": "transparent"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover",
+					"backgroundColor": "transparent",
+					"borderColor": "transparent"
+				},
+				"bg1": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover",
+					"backgroundColor": "transparent",
+					"borderColor": "transparent"
+				},
+				"bg2": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover",
+					"backgroundColor": "transparent",
+					"borderColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-10-v1",
+			"name": "card",
+			"desc": "This is an  template",
+			"author": "the author",
+			"date": "2014-11-19",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-11-v1",
+			"name": "image-text a 03 06",
+			"desc": "image-text a 03 06",
+			"author": "the author",
+			"date": "2014-09-25",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框换背景",
+					"fontSize": "1em",
+					"fontFamily": "宋体",
+					"fontStyle": "normal",
+					"color": "#666",
+					"backgroundColor": "white"
+				},
+				"bgc0": {
+					"type": "bg-color"
+				},
+				"bgc1": {
+					"type": "bg-color",
+					"backgroundColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-12",
+			"name": "image-text a 03 12",
+			"desc": "image-text a 03 12",
+			"author": "the author",
+			"date": "2014-12-15",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img-smls.jpg"
+				}
+			}
+		},
+		{
+			"templateId": "110-image/imgtxt-a-03-13",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-01-16",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				}
+			}
+		}],
+		"name": "图片",
+		"desc": "desc for images",
+		"author": "the author",
+		"date": "2014-08-29",
+		"version": "0.1"
+	},
+	{
+		"roomId": "201-card",
+		"items": [{
+			"templateId": "201-card/001-c1",
+			"name": "首字大写 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请",
+					"fontSize": "2.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/002-c7",
+			"name": "上下边框卡片 c7",
+			"desc": "this is a card template",
+			"author": "the author",
+			"date": "2014-08-11",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "<section style='font-style: italic;'>最好使用谷歌Chrome浏览器，而且调用和微信编辑器都用Chrome打开操作，这样使用调用能够获得完美的体验。根据目前大多数用户的反馈，尽管360浏览器的极速模式，IE10/IE11，猎豹浏览器等等，也能在大多数情况下正常使用，但总会在个别地方、个别模板上遇到一些问题。为了节省大家的时间，请大家尽量使用Chrome</section>",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/003-c12-v1",
+			"name": "首字特殊字符 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-09-22",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": " &uarr; ",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "black"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/010-c2-1-v1",
+			"name": "文字框 c2",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "#f4f4f4",
+					"borderColor": "#b6b6b6"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/011-c3-1-v1",
+			"name": "文字框 c3-1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "1. 按住编辑区的十字箭头可以拖动内容调整顺序。\n2. 点击'+'号可以快速复制当前内容或插入正文/图片。",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"backgroundColor": "#efefef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/012-c4-1-v1",
+			"name": "虚框文字 c4-1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字\n",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"borderColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/013-c6-1-v1",
+			"name": "阴影文字框 c6-1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "#fafaef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/020-c2-v1",
+			"name": "文字框 c2-1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "#f4f4f4",
+					"borderColor": "#b6b6b6"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/021-c3-v1",
+			"name": "文字框 c3",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "#efefef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/022-c4-v1",
+			"name": "虚框文字 c4",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字\n",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color":"white",
+					"borderColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/023-c6-v1",
+			"name": "阴影文字框 c6",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "#fafaef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/024-v1",
+			"name": "文字框 c3",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"textAlign": "center",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent",
+					"borderColor": "black"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/025-c1",
+			"name": "文字框 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2015-02-28",
+			"version": "0.1",
+			"editables": {
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": "black"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "<section style='color: #feb1ae;margin-bottom: 0.2em;'>小贴士:</section>点击外白色区域\n换黑色边框",
+					"textAlign": "center",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent",
+					"borderColor": "#808080"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/026-c2",
+			"name": "tips-title",
+			"dasc": "This is an tips title",
+			"author": "the author",
+			"date": "2015-02-28",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "小贴士",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"backgroundColor": "rgba(211, 207, 206, 0.12)"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/030-c5-v1",
+			"name": "贴士 c5",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "小贴士",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/030-c6-v1",
+			"name": "左对齐标题 t10",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-11-14",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"backgroundColor": "rgb(239, 239, 239)",
+					"borderColor": ""
+				}
+			}
+		},
+		{
+			"templateId": "201-card/031-c8-v1",
+			"name": "贴士 1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "内容",
+					"fontSize": "0.65em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/032-c9-v1",
+			"name": "贴士 c9",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "小贴士",
+					"textAlign": "right",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/033-c10-v1",
+			"name": "文字框 c10",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-09-17",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/034-c11-v1",
+			"name": "文字框 c11",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-09-18",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字请输入文字\n请输入文字请输入文字\n请输入文字请输入文字",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/035-c13-v2",
+			"name": "文字框 c13",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-09-24",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"fontWeight": "bolder"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "1",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "white"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输入文字\n请输入文字请输入文字",
+					"fontSize": "0.65em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/050-cd-text-img-01",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-17",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/ugnYPLVSd8t1VX0frE0WhicHjuoQJZRx1PRK0AvBjQy1quNibib6eyTOqkWVUe1Zcou3JmnLicI8r1jWdVb6AXv91w.png"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入文字输入",
+					"fontSize": "1.3em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"font-weight": "blod",
+					"textAlign": "left",
+					"color": "black",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入文字输入文字请输入文字请输入文字请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "right",
+					"color": "#484848",
+					"backgroundColor": "transparent"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入文字输入文字请输入文字请输入文字请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "left",
+					"color": "#484848",
+					"backgroundColor": "transparent"
+				},
+				"text3": {
+					"type": "ed-type-text",
+					"text": "请输入文字输入文字请输入文字请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "#484848",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/051-cd-text-umbrella-01-v1",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2015-02-06",
+			"version": "0.1",
+			"editables": {
+				"bgc0": {
+					"type": "bg-color"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击外",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "black"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "边框换背景",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "black"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/cd-i-01-01",
+			"name": "cd-i-01-01",
+			"desc": "cd-i-01-01",
+			"author": "the author",
+			"date": "2014-10-31",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"rctxt0": {
+					"type": "ed-type-rich-text",
+					"text": "详细描述:\n第一行\n第二行",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "left",
+					"color": "white",
+					"borderColor": "transparent"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "序号\n001",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "center",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/cd-i-01-02",
+			"name": "Card 01 02",
+			"desc": "Card 01 02",
+			"author": "the author",
+			"date": "2014-11-21",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字请输入文字\n请输入文字请输入文字",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "注:",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/cd-i-01-03",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-09",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "预览效果不对？",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(42, 52, 58)",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "1. 从已经做好的网页上复制内容，会引起格式的问题。\n2. 从编辑器复制内容到编辑器，也是会有问题的。\n3. 所以必须保证从调用复制到编辑器。\n4. 正文里面出现例如http://这种超链接，会过长引起问题，需要自己手工再调整。",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"color": "rgb(42, 52, 58)"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/cd-i-01-04",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-17",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字输入文字请输入文字请输入文字请输入文字请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "201-card/cd-i-01-05",
+			"name": "card",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-17",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字输入文字请输入文字请输入文字请输入文字请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": "justify",
+					"backgroundColor": "transparent"
+				}
+			}
+		}],
+		"name": "卡片",
+		"desc": "desc for Cards",
+		"author": "the author",
+		"date": "2014-08-06",
+		"version": "0.1"
+	},
+	{
+		"roomId": "202-cardheader",
+		"items": [{
+			"templateId": "202-cardheader/c1-v1",
+			"name": "左对齐标题卡片 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000",
+					"backgroundColor": "#efefef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c2-v1",
+			"name": "左对齐标题卡片带脚标 c2",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "公众号名称",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "#ccc"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000",
+					"backgroundColor": "#efefef",
+					"borderColor": "#c0c8d1"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c3-v1",
+			"name": "中对齐标题卡片 c3",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-06",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字\n请输入文字\n请输入文字",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#a6a6a6",
+					"backgroundColor": "white",
+					"borderColor": "#ccc"
+				},
+				"bgc0": {
+					"type": "bg-color",
+					"backgroundColor": "white"
+				},
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": "#ccc"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c4-v1",
+			"name": "中对齐标题卡片 c4",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-08-14",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字\n请输入文字\n请输入文字",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(51, 51, 51)",
+					"borderColor": "#ccc",
+					"backgroundColor": "#fffff0"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c5-v1",
+			"name": "左对齐标题卡片 c5",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-09-23",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字请输入文字请输入文字请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(51, 51, 51)",
+					"backgroundColor": "white"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c6-v1",
+			"name": "左对齐标题卡片 c6",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-10-15",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "保存和收藏的区别",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "1. 保存一个图文后，可以在“我的图文”那里看到，可以有一个预览的链接，可以将来打开重新编辑，并且另存为另外一个图文。\n2. 收藏当前编辑区域，可以在编辑任意图文的时候，把收藏的部分快速加入编辑区域，特别适合常用的模板例如关注，签名，引导原文阅读这些部分。",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c7-v1",
+			"name": "左对齐标题卡片 c7",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-10-15",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#000",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c8-v1",
+			"name": "text",
+			"desc": "this is a title template",
+			"author": "the author",
+			"date": "2014-11-13",
+			"version": "0.1",
+			"obsolete": false,
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题\n请输入标题",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "rgb(239, 239, 239)",
+					"color": "black",
+					"borderColor": "#ccc"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"fontWeight": "bolder"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/c9",
+			"name": "card",
+			"desc": "This is an  template",
+			"author": "the author",
+			"date": "2014-11-19",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"textAlign": "center",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF",
+					"borderColor": "",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/d10-b1",
+			"name": "标题卡片 c1",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-09",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "高级选项的用法",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#999"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "编辑文字的时候，点击高级，然后可以选择部分的文字，修改它们的大小和颜色。",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#999",
+					"borderColor": "#ccc",
+					"backgroundColor": "#ffffff"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "小贴士",
+					"fontSize": "0.8em",
+					"textAlign": "left",
+					"fontFamily": "inherit",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/d11-assistor-grid-01",
+			"name": "img-Label",
+			"dasc": "This is an img-Lable",
+			"author": "the author",
+			"date": "2015-01-14",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "Tips",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "1、请输入文字\n\n2、请输入文字\n\n3、请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"color": "#666",
+					"backgroundColor": "#f6f3ea"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/d12-assistor-grid-02",
+			"name": "img-Label",
+			"dasc": "This is an img-Lable",
+			"author": "the author",
+			"date": "2015-01-14",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "Tips",
+					"fontSize": "2em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "1、请输入文字\n\n2、请输入文字\n\n3、请输入文字",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "left",
+					"fontStyle": "normal",
+					"color": "#666",
+					"backgroundColor": "#f6f3ea"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/d13-letter-01",
+			"name": "img-Label",
+			"dasc": "This is an img-Lable",
+			"author": "the author",
+			"date": "2015-01-29",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/ugnYPLVSd8sZOkgXUIaBM3JnBkhqTgwjKgFuibBIGWBibIiaw78L9RRoKupkQto9RcSEvxYibodvZo9hcJEE7Rcyvg.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输入",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text5": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text6": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text7": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输入",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text8": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		},
+		{
+			"templateId": "202-cardheader/d14-img-text-01",
+			"name": "img-Label",
+			"dasc": "This is an img-Lable",
+			"author": "the author",
+			"date": "2015-02-04",
+			"version": "0.1",
+			"editables": {
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": "#d89fb2"
+				},
+				"bdc1": {
+					"type": "border-color",
+					"borderColor": "#548c90"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/ugnYPLVSd8t1VX0frE0WhicHjuoQJZRx1CEnV5jCoy6s0O1KnxMVGea4hFibqtz8GWoR0oWH1bbwibgbZJIgE9xKw.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "contain"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "運勢",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#ab2a5a"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "大吉",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#ab2a5a"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text3": {
+					"type": "ed-type-text",
+					"text": "请输入文字请请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text4": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text5": {
+					"type": "ed-type-text",
+					"text": "请输入文字请请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text6": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text7": {
+					"type": "ed-type-text",
+					"text": "请输入文字请请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text8": {
+					"type": "ed-type-text",
+					"text": "请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				},
+				"text9": {
+					"type": "ed-type-text",
+					"text": "请输入文字请请输入文字请",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		}],
+		"name": "标题卡片",
+		"desc": "desc for Cards",
+		"author": "the author",
+		"date": "2014-08-06",
+		"version": "0.1"
+	},
+	{
+		"roomId": "701-other",
+		"items": [{
+			"templateId": "701-other/001-namecard-1-v1",
+			"name": "名片 namecard-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入订阅号名称",
+					"textAlign": "center",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "微信号:请输入微信号",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "请输入内容请输入内容\n请输入内容请输入内容\n请输入内容请输入内容",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"borderColor": "#c9c9c9",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/002-conv-1-left-2-v2",
+			"name": "对话 conv-1-left",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaLEvswCQUUK0k4rPOicLo8SMm0pJOkgsVHg5qDgb0paoeAmW1YTgQRcQ.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入对话",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"borderColor": "#ffe4c8",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/003-conv-1-right-2-v2",
+			"name": "对话 conv-1-right",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入对话",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"backgroundColor": "transparent",
+					"borderColor": "#bce3f9"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"fontSize": "0.8em",
+					"fontFamily": "inherit",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"color": "inherit"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaia9Qbm8Bwp9Eribfk1rscovFOkJSD0NOD8M36LkR0dQBrJeBgFTPEhww.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/006-activity-1-v1",
+			"name": "活动 activity 1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入活动名称",
+					"textAlign": "center",
+					"fontSize": "1.4em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"fontWeight": "bold",
+					"color": "white"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入活动时间",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"backgroundColor": "transparent"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "请输入活动地点",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"backgroundColor": "transparent"
+				},
+				"richtext3": {
+					"type": "ed-type-rich-text",
+					"text": "活动介绍",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				},
+				"richtext4": {
+					"type": "ed-type-rich-text",
+					"text": "请输入活动内容\n请输入活动内容\n请输入活动内容\n......",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit",
+					"backgroundColor": "white",
+					"borderColor": "#e2e2e2"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-bottom-1",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/ugnYPLVSd8t1VX0frE0WhicHjuoQJZRx1qjsK8znyl81y13y4fbZRuq8RknHn9HAfmt6xQYx9qa1d1pZTbCyGCQ.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "输入文字输入文字\n点击下方<span style='color:#e18124;font-size: 1.1em; '>“阅读原文”</span>查看更多",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"textAlign": " left",
+					"color": "c4d8dd",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-bottom-2",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "输入文字输入文字\n输入文字输入文字\n点击下方<span style='color: #e18124;'>“阅读原文”</span>查看更多",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "c4d8dd",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-top-1-left",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#e18124;font-size: 1.2em; '>“公众号”</span>可订阅哦！",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-top-1",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#e18124;font-size: 1.2em; '>“公众号”</span>可订阅哦！",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-top-2",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#e18124;font-size: 1.2em; '>“公众号”</span>可以订阅哦！",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-guide-top-3",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#e18124;font-size: 1.2em; '>“公众号”</span>可以订阅哦",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-hint-top-1-v2",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#515c7d;font-size: 1.2em; '>“公众号”</span>可以订阅哦！",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/007-hint-top-2",
+			"name": "关注 hint-top-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击上方<span style='color:#515c7d;font-size: 1.2em; '>“公众号”</span>可以订阅哦！",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/008-hint-bottom-1-v2",
+			"name": "原文hint-bottom-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "点击下方<span style='color: #515c7d;'>“阅读原文”</span>查看更多",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473",
+					"backgroundColor": "white",
+					"borderColor": "#e2e2e2"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/009-Q&A-1",
+			"name": "Q&A 009-Q&A-1",
+			"desc": "this is a Q&A template",
+			"author": "the author",
+			"date": "2014-08-11",
+			"version": "0.1",
+			"prompt": "此模板复制到微信编辑器里有点乱，不过最终效果是对的",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/009-Q&A-text",
+			"name": "标题",
+			"desc": "This is an article template",
+			"author": "the author",
+			"date": "2014-12-17",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "Q",
+					"fontSize": "36px",
+					"textAlign": "center",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "&",
+					"fontSize": "12px",
+					"textAlign": "center",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#999"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "A",
+					"fontSize": "24px",
+					"textAlign": "center",
+					"fontFamily": "inherit",
+					"fontStyle": "normal"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/010-namecard-2-v1",
+			"name": "名片 namecard-2",
+			"desc": "desc for namecard-2",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "输入请输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入请输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "white"
+				},
+				"richtext3": {
+					"type": "ed-type-rich-text",
+					"text": "公众号名称",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "black",
+					"backgroundColor": "white",
+					"borderColor": "#e2e2e2"
+				},
+				"text4": {
+					"type": "ed-type-text",
+					"text": "微信号：请输入微信号",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "black"
+				},
+				"text5": {
+					"type": "ed-type-text",
+					"text": "网址：请输入网址",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text6": {
+					"type": "ed-type-text",
+					"text": "QQ群：请输入QQ群",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text7": {
+					"type": "ed-type-text",
+					"text": "输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text8": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/010-namecard-3",
+			"name": "名片 namecard-2",
+			"desc": "desc for namecard-2",
+			"author": "the author",
+			"date": "2014-11-24",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "输入请输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入请输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"richtext2": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "white"
+				},
+				"richtext3": {
+					"type": "ed-type-rich-text",
+					"text": "公众号名称",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "black",
+					"backgroundColor": "white",
+					"borderColor": "#e2e2e2"
+				},
+				"text4": {
+					"type": "ed-type-text",
+					"text": "微信号：请输入微信号",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "black"
+				},
+				"text5": {
+					"type": "ed-type-text",
+					"text": "网址：请输入网址",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text6": {
+					"type": "ed-type-text",
+					"text": "QQ群：请输入QQ群",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text7": {
+					"type": "ed-type-text",
+					"text": "输入请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"text8": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"fontSize": "0.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(120, 124, 129)"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/011-dividing-line-1",
+			"name": "分割线 dividing-line-1",
+			"desc": "desc for dividing-line-1",
+			"author": "the author",
+			"date": "2014-08-15",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/012-dividing-line-2",
+			"name": "分割线 dividing-line-2",
+			"desc": "desc for dividing-line-2",
+			"author": "the author",
+			"date": "2014-08-15",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/013-dividing-line-3",
+			"name": "分割线 dividing-line-3",
+			"desc": "desc for dividing-line-3",
+			"author": "the author",
+			"date": "2014-08-15",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/013-dividing-line-4",
+			"name": "分割线 dividing-line-4",
+			"desc": "desc for dividing-line-4",
+			"author": "the author",
+			"date": "2014-11-21",
+			"version": "0.1",
+			"editables": {
+				"bdc0": {
+					"type": "border-color"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/013-dividing-line-5",
+			"name": "分割线 dividing-line-4",
+			"desc": "desc for dividing-line-4",
+			"author": "the author",
+			"date": "2014-11-21",
+			"version": "0.1",
+			"editables": {
+				"bdc0": {
+					"type": "border-color"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/014-hint-bottom-2",
+			"name": "原文 hint-bottom-2",
+			"desc": "desc for hint-bottom-2",
+			"author": "the author",
+			"date": "2014-08-18",
+			"version": "0.1",
+			"editables": {
+				"text0": {
+					"type": "ed-type-text",
+					"text": "点击下方",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "“阅读原文”",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#405473"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "查看更多",
+					"fontSize": "0.9em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "inherit"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/015-dividing-line-4",
+			"name": "分割线 dividing-line-4",
+			"desc": "desc for dividing-line-4",
+			"author": "the author",
+			"date": "2014-08-22",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/016-dividing-line-5",
+			"name": "分割线 dividing-line-5",
+			"desc": "desc for dividing-line-5",
+			"author": "the author",
+			"date": "2014-08-22",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/017-dividing-line-6",
+			"name": "分割线 dividing-line-6",
+			"desc": "desc for dividing-line-6",
+			"author": "the author",
+			"date": "2014-08-22",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/017-dividing-line-7",
+			"name": "分割线 dividing-line-7",
+			"desc": "desc for dividing-line-7",
+			"author": "the author",
+			"date": "2014-08-22",
+			"version": "0.1",
+			"editables": {}
+		},
+		{
+			"templateId": "701-other/018-namecard-3-v1",
+			"name": "名片 namecard-3",
+			"desc": "desc for namecard-3",
+			"author": "the author",
+			"date": "2014-08-22",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "diaoyong",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "white",
+					"borderColor": "white"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "white"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "请输入请输入请输入",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgba(255, 255, 255, 0.85)"
+				},
+				"text3": {
+					"type": "ed-type-text",
+					"text": "请输入请输入请输入",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "bolder",
+					"color": "rgba(255, 255, 255, 0.85)"
+				},
+				"text4": {
+					"type": "ed-type-text",
+					"text": "请输入请输入",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgba(255, 255, 255, 0.85)"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/020-namecard-2-v1",
+			"name": "名片 namecard-1",
+			"desc": "desc for Conversation 1",
+			"author": "the author",
+			"date": "2014-07-21",
+			"version": "0.1",
+			"editables": {
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0EmGultAbZy6tmUIxPWnw9iaia9Qbm8Bwp9Eribfk1rscovFOkJSD0NOD8M36LkR0dQBrJeBgFTPEhww.png",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"img1": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/MVPvEL7Qg0EzY4LiaibRIjiapgkaXWBIMuRLlGibWFfJVaibZbctIZQDAEibTfZLUEwxXLnL5eLwbfhonGwIxB1kWCoQ.jpg"
+				},
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "请输入标题",
+					"textAlign": "center",
+					"fontSize": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black",
+					"backgroundColor": "transparent"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "请输入内容\n请输入内容\n请输入内容\n请输入内容",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "rgb(52, 54, 60)"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "微信号：",
+					"fontSize": "0.7em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/023-bottom-hrnt-01",
+			"name": "card",
+			"desc": "This is an  template",
+			"author": "the author",
+			"date": "2014-11-19",
+			"version": "0.1",
+			"editables": {
+				"richtext0": {
+					"type": "ed-type-rich-text",
+					"text": "标题",
+					"textAlign": "left",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF"
+				},
+				"richtext1": {
+					"type": "ed-type-rich-text",
+					"text": "请输入文字\n请输入文字",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF",
+					"borderColor": "",
+					"backgroundColor": "transparent"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入标题",
+					"textAlign": "left",
+					"fontSize": "1.2em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "标题",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#FFF"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "点击下面",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#ccc"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/023-bottom-hrnt-02",
+			"name": "card",
+			"desc": "This is an  template",
+			"author": "the author",
+			"date": "2014-11-19",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "标",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "题",
+					"textAlign": "center",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "black"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "<section><section><span style='font-size: 175%;'>标题</span></section><section>请输入文本</section></section>",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"lineHeight": "1.5em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#272c33",
+					"backgroundColor": "transparent"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/025-bottom-hrnt-03",
+			"name": "img-Label",
+			"dasc": "This is an img-Lable",
+			"author": "the author",
+			"date": "2015-01-14",
+			"version": "0.1",
+			"editables": {
+				"img0": {
+					"type": "image",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg"
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"text0": {
+					"type": "ed-type-text",
+					"text": "请输入文字请输入文字请输入文字请输入文字请输入文字请输入文字",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#999"
+				},
+				"text1": {
+					"type": "ed-type-text",
+					"text": "点击外边白色边框",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"text2": {
+					"type": "ed-type-text",
+					"text": "换背景",
+					"textAlign": "left",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "white"
+				},
+				"bgc0": {
+					"type": "bg-color",
+					"backgroundColor": " white"
+				},
+				"bdc0": {
+					"type": "border-color",
+					"borderColor": " white"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/035-qq-video-1",
+			"name": "qq video",
+			"desc": "This is an qq video 025",
+			"author": "the author",
+			"date": "2015-01-12",
+			"version": "0.1",
+			"editables": {
+				"video0": {
+					"type": "qq-video",
+					"url": ""
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "调用公众号",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		},
+		{
+			"templateId": "701-other/036-mac-video-1",
+			"name": "qq video",
+			"desc": "This is an qq video 025",
+			"author": "the author",
+			"date": "2015-01-12",
+			"version": "0.1",
+			"editables": {
+				"video0": {
+					"type": "qq-video",
+					"url": ""
+				},
+				"bg0": {
+					"type": "ed-type-bg",
+					"url": "http://7xi8pt.com2.z0.glb.qiniucdn.com/placeholder-img.jpg",
+					"posX": "center",
+					"posY": "center",
+					"backgroundSize": "cover"
+				},
+				"txt0": {
+					"type": "ed-type-text",
+					"text": "调用公众号",
+					"fontSize": "1em",
+					"fontFamily": "inherit",
+					"fontStyle": "normal",
+					"color": "#666"
+				}
+			}
+		}],
+		"name": "其它",
+		"desc": "desc for Conversations",
+		"author": "the author",
+		"date": "2014-08-06",
+		"version": "0.1"
+	}]
+}
+
+

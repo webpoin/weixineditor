@@ -1,0 +1,36 @@
+tn_show_data_result({
+	"pages": [{
+		"templateId": "001-header/h1",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>点击一个模板，就会自动加到编辑区最后</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	},
+	{
+		"templateId": "001-header/h2",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>直接拖动模板，可以插入到编辑区域中间</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	}],
+	"globals": [],
+	"version": 2,
+	"deskVersion": 2,
+	"title": null,
+	"desc": null,
+	"cover": null
+});

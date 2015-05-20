@@ -1,0 +1,732 @@
+[TOC]
+
+
+## 整体说明
+> * 为简化目录结构， 约定图文、图片、收藏等id统一为 ‘888888’，同时url上的 ‘888888’ 表示对应模块的id
+> * POST交互统一采用postJSON方式发送数据到后台，后台有接收不到参数的情况，
+	解决办法：在php中使用如下方法 获取数据
+``` php 
+	$postData = file_get_contents('php://input', true);
+``` 
+
+
+## 1.图文操作
+### 查看图文 
+------------------------
+> * 前端访问： /api/show/888888
+> * 文件位置： /api/show/888888/index.php
+> * 请求方式： GET
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 图文数据列表
+	// show_id: 图文的id
+	// show_data_name: 图文具体数据链接
+	// show_data_url : 图文具体数据jsonp 调用地址
+	// show_url: 图文发布后访问地址(自定义)
+
+// code：
+{
+	"code": 2,
+	"message": "Common:Updated",
+	"data": {
+		"show_id": 888888,
+		"type": 2,
+		"title": null,
+		"cover": null,
+		"show_data_name": "837f9f4a370b497be02221bed60c543c",
+		"right_no_logo": 0,
+		"right_no_advert": 0,
+		"mask_no_modification": 0,
+		"mask_on_locking": 0,
+		"traffic": 0,
+		"points": 0,
+		"history_hits": 0,
+		"created_at": "2015-03-20T08:36:20.000Z",
+		"updated_at": "2015-03-21T00:36:58.000Z",
+		"show_data_url": "api/show/detail.jsonp",
+		"show_url": "diaoyong.com/results_link"
+	}
+}
+```
+
+### 发布图文 
+------------------------
+> * 前端访问： /api/show/article
+> * 文件位置： /api/show/article/index.php
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// 重要参数说明:
+	// pages: 图文模板与数据列表
+	// templateId：模板id
+
+code:
+{"pages": [{
+		"templateId": "001-header/h2",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>test</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	},
+	{
+		"templateId": "001-header/t-a-01-01",
+		"themeColor": "#f96e57",
+		"editables": {
+			"richtext0": {
+				"type": "ed-type-rich-text",
+				"text": "<section>请输入标题</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "white"
+			}
+		}
+	}],
+	"globals": [],
+	"version": 2,
+	"deskVersion": 2,
+	"title": null,
+	"desc": null,
+	"cover": null
+}
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 图文数据列表
+	// show_id: 图文的id
+	// show_data_name: 图文具体数据链接
+	// show_data_url : 图文具体数据jsonp 调用地址
+	// show_url: 图文发布后访问地址
+
+// code：
+{
+	"code": 2,
+	"message": "Common:Updated",
+	"data": {
+		"show_id": 582740,
+		"type": 2,
+		"title": null,
+		"cover": null,
+		"show_data_name": "8d056dfa44bf93364142471b5757d1f8",
+		"right_no_logo": 0,
+		"right_no_advert": 0,
+		"mask_no_modification": 0,
+		"mask_on_locking": 0,
+		"traffic": 0,
+		"points": 0,
+		"history_hits": 0,
+		"created_at": "2015-03-18T13:31:43.000Z",
+		"updated_at": "2015-03-19T03:51:35.000Z",
+		"show_data_url": "api/show/detail.jsonp",
+		"show_url": "diaoyong.com/results_link"
+	}
+}
+```
+
+### 更新图文 
+------------------------
+> * 前端访问： /api/show/888888
+> * 文件位置： /api/show/888888/index.php
+> * 请求方式： PUT
+
+```javascript
+// 接收参数
+// 重要参数说明:
+	// pages: 图文模板与数据列表
+	// templateId：模板id
+
+// code：
+{
+	"pages": [{
+		"templateId": "001-header/h1",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>点击一个模板，就会自编辑区最后</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	},
+	{
+		"templateId": "001-header/h2",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>直接拖动模板，可以插入到编辑区域中间</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	}],
+	"globals": [],
+	"version": 2,
+	"deskVersion": 2,
+	"title": null,
+	"desc": null,
+	"cover": null
+}
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 图文数据列表
+	// show_id: 图文的id
+	// show_data_name: 图文具体数据链接
+	// show_data_url : 图文具体数据jsonp 调用地址
+	// show_url: 图文发布后访问地址
+
+// code：
+{
+	"code": 2,
+	"message": "Common:Updated",
+	"data": {
+		"show_id": 888888,
+		"type": 2,
+		"title": null,
+		"cover": null,
+		"show_data_name": "837f9f4a370b497be02221bed60c543c",
+		"right_no_logo": 0,
+		"right_no_advert": 0,
+		"mask_no_modification": 0,
+		"mask_on_locking": 0,
+		"traffic": 0,
+		"points": 0,
+		"history_hits": 0,
+		"created_at": "2015-03-20T08:36:20.000Z",
+		"updated_at": "2015-03-21T00:36:58.000Z",
+		"show_data_url": "api/show/detail.jsonp",
+		"show_url": "diaoyong.com/results_link"
+	}
+}
+```
+
+### 编辑图文
+------------------------
+> * 链接地址： /index.html#/for/888888  
+>   其中 888888 为图文show_id
+
+
+
+
+## 2.我的收藏
+### 查询我的收藏列表
+------------------------
+> * 前端访问： /api/fragment/list
+> * 文件位置： /api/fragment/list
+> * 请求方式： GET
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data:收藏列表
+	// fragment_id: 收藏图文的id
+	// fragment_url: 收藏图文具体数据链接
+
+// code：
+{
+	"code": 0,
+	"message": "Common:OK",
+	"data": [{
+		"fragment_id": 888888,
+		"fragment_url": "/api/fragment/detail.jsonp",
+		"created_at": "2015-03-19T03:40:39.000Z",
+		"updated_at": "2015-03-19T03:40:39.000Z"
+	},
+	{
+		"fragment_id": 888888,
+		"fragment_url": "/api/fragment/detail.jsonp",
+		"created_at": "2015-03-19T18:11:42.000Z",
+		"updated_at": "2015-03-19T18:11:42.000Z"
+	}]
+}
+```
+
+### 添加到我的收藏
+------------------------
+> * 前端访问： /api/fragment/
+> * 文件位置： /api/fragment/index.php
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// 格式：json
+// 重要参数说明:
+	// slices:具体内容列表
+
+// code：
+{
+	"version": 0.1,
+	"deskVersion": 0.1,
+	"slices": [{
+		"templateId": "001-header/h2",
+		"themeColor": "#f96e57",
+		"editables": {
+			"text0": {
+				"type": "ed-type-text",
+				"text": "<section>多内容测试</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "inherit"
+			}
+		}
+	},
+	{
+		"templateId": "001-header/t-a-01-01",
+		"themeColor": "#f96e57",
+		"editables": {
+			"richtext0": {
+				"type": "ed-type-rich-text",
+				"text": "<section>请输入标题</section>",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "white"
+			}
+		}
+	}]
+}
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data:收藏列表
+	// fragment_id: 收藏图文的id
+	// fragment_url: 收藏图文具体数据链接
+
+// code：
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"fragment_id": 888888,
+		"fragment_url": "/api/fragment/detail.jsonp",
+		"created_at": "2015-03-19T18:11:42.000Z",
+		"updated_at": "2015-03-19T18:11:42.000Z"
+	}
+}
+```
+
+### 删除我的收藏
+------------------------
+> * 前端访问： /api/fragment/888888
+> * 文件位置： /api/fragment/888888/index.php
+> * 请求方式： DELETE
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+
+// code：
+{
+	"code": 0,
+	"message": "Deleted",
+	"data": null
+}
+```
+
+### 我的收藏具体内容
+------------------------
+> * 前端访问： /api/fragment/detail.jsonp (创建时生成的fragment_url地址)
+> * 文件位置： /api/fragment/detail.jsonp
+> * 请求方式： GET
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：jsonp
+// 重要参数说明:
+	// slices: 模版id、数据列表
+	// templateId:  需要调用的模版id
+
+// code：
+tn_fragment_data_result({
+	"version": 0.1,
+	"deskVersion": 0.1,
+	"slices": [{
+		"templateId": "001-header/t-a-02-01",
+		"themeColor": "#f96e57",
+		"editables": {
+			"richtext0": {
+				"type": "ed-type-rich-text",
+				"text": "<section>test of title</section>",
+				"textAlign": "center",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "white",
+				"backgroundColor": "transparent"
+			}
+		}
+	}]
+})
+```
+
+
+## 3.图片操作
+
+### 查看图片列表
+------------------------
+> * 前端访问： /api/asset/list/image 
+> * 文件位置： /api/asset/list/image
+> * 请求方式： GET
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+	// display_name: 当target_uri访问失败时，调用的默认图片
+
+// code：
+{
+	"code": 0,
+	"message": "Common:OK",
+	"data": [{
+		"asset_id": 888888,
+		"owner_id": 286698,
+		"asset_type": 0,
+		"host_context": 0,
+		"hash_value": "dba91342e003635738f46170c3ac0125",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": "175200.gif",
+		"file_size": 103274,
+		"deleted": 0,
+		"created_at": "2015-03-19T04:05:16.000Z",
+		"updated_at": "2015-03-20T02:21:34.000Z"
+	},
+	{
+		"asset_id": 888888,
+		"owner_id": 286698,
+		"asset_type": 0,
+		"host_context": 100,
+		"hash_value": "6e365358ce530fa172ab1c637bb29d43",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": null,
+		"file_size": 0,
+		"deleted": 0,
+		"created_at": "2015-03-20T02:22:25.000Z",
+		"updated_at": "2015-03-20T02:22:25.000Z"
+	}]
+}
+```
+
+### 添加图片链接地址
+------------------------
+> * 前端访问： /api/asset/image/out 
+> * 文件位置： /api/asset/image/out
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// code
+{
+	"image_url":"http://union.anzimall.com/data/merchants_product/160/4c5a3bb20000080a.jpg"
+}
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+
+// code：
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"deleted": 0,
+		"asset_id": 888888,
+		"asset_type": 0,
+		"owner_id": 286698,
+		"host_context": 100,
+		"hash_value": "66f91f6b5541ab62a312f00747642358",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"file_size": 0,
+		"updated_at": "2015-03-20T03:14:43.000Z",
+		"created_at": "2015-03-20T03:14:43.000Z"
+	}
+}
+```
+
+### 本地上传图片
+------------------------
+> * 前端访问： /api/asset/image/file
+> * 文件位置： /api/asset/image/file
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// 流文件，文件name：image_file
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+	// display_name: 原文件名
+
+// code：
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"deleted": 0,
+		"asset_id": 888888,
+		"asset_type": 0,
+		"owner_id": 286698,
+		"host_context": 0,
+		"hash_value": "767534d8301260689457afccaa75c642",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": "0~4.png",
+		"file_size": 8284,
+		"updated_at": "2015-03-20T05:59:33.000Z",
+		"created_at": "2015-03-20T05:59:33.000Z"
+	}
+}
+```
+
+
+### 删除图片
+------------------------
+> * 前端访问： /api/asset/888888
+> * 文件位置： /api/asset/888888/index.php
+> * 请求方式： DELETE
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+
+// code：
+{
+	"code": 0,
+	"message": "Deleted",
+	"data": null
+}
+```
+
+
+## 4.音频 (原站未实现功能,不需开发)
+### 查看音频列表
+------------------------
+> * 前端访问： /api/asset/list/audio 
+> * 文件位置： /api/asset/list/audio
+> * 请求方式： GET
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+	// display_name: 当target_uri访问失败时，调用的默认音频
+
+// code：
+{
+	"code": 0,
+	"message": "Common:OK",
+	"data": [{
+		"asset_id": 888888,
+		"owner_id": 286698,
+		"asset_type": 0,
+		"host_context": 0,
+		"hash_value": "dba91342e003635738f46170c3ac0125",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": "175200.gif",
+		"file_size": 103274,
+		"deleted": 0,
+		"created_at": "2015-03-19T04:05:16.000Z",
+		"updated_at": "2015-03-20T02:21:34.000Z"
+	},
+	{
+		"asset_id": 888888,
+		"owner_id": 286698,
+		"asset_type": 0,
+		"host_context": 100,
+		"hash_value": "6e365358ce530fa172ab1c637bb29d43",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": null,
+		"file_size": 0,
+		"deleted": 0,
+		"created_at": "2015-03-20T02:22:25.000Z",
+		"updated_at": "2015-03-20T02:22:25.000Z"
+	}]
+}
+```
+
+### 添加音频链接地址
+------------------------
+> * 前端访问： /api/asset/audio/out 
+> * 文件位置： /api/asset/audio/out
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// code
+{
+	"audio_url":"http://union.anzimall.com/data/merchants_product/160/4c5a3bb20000080a.jpg"
+}
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+
+// code：
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"deleted": 0,
+		"asset_id": 888888,
+		"asset_type": 0,
+		"owner_id": 286698,
+		"host_context": 100,
+		"hash_value": "66f91f6b5541ab62a312f00747642358",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"file_size": 0,
+		"updated_at": "2015-03-20T03:14:43.000Z",
+		"created_at": "2015-03-20T03:14:43.000Z"
+	}
+}
+```
+
+### 本地上传音频
+------------------------
+> * 前端访问： /api/asset/audio/file
+> * 文件位置： /api/asset/audio/file
+> * 请求方式： POST
+
+```javascript
+// 接收参数
+// 流文件，文件name：audio_file
+```
+
+```javascript
+// 返回值
+// 格式：json
+// 重要参数说明:
+	// data: 数据列表对象
+	// asset_id: 资源id，用于删除操作
+	// target_uri: 访问url
+	// display_name: 原文件名
+
+// code：
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"deleted": 0,
+		"asset_id": 888888,
+		"asset_type": 0,
+		"owner_id": 286698,
+		"host_context": 0,
+		"hash_value": "767534d8301260689457afccaa75c642",
+		"target_uri": "http://7xi8nn.com1.z0.glb.clouddn.com/ss.png",
+		"display_name": "0~4.png",
+		"file_size": 8284,
+		"updated_at": "2015-03-20T05:59:33.000Z",
+		"created_at": "2015-03-20T05:59:33.000Z"
+	}
+}
+```
+
+
+### 删除音频
+------------------------
+> * 前端访问： /api/asset/888888
+> * 文件位置： /api/asset/888888/index.php
+> * 请求方式： DELETE
+
+```javascript
+// 接收参数
+// 参数为空
+```
+
+```javascript
+// 返回值
+// 格式：json
+
+// code：
+{
+	"code": 0,
+	"message": "Deleted",
+	"data": null
+}
+```
+
+
+## 结束

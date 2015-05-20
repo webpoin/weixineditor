@@ -1,0 +1,16 @@
+{
+	"code": 1,
+	"message": "Common:Created",
+	"data": {
+		"deleted": 0,
+		"asset_id": 888888,
+		"asset_type": 0,
+		"owner_id": 286698,
+		"host_context": 100,
+		"hash_value": "66f91f6b5541ab62a312f00747642358",
+		"target_uri": "api/asset/test.jpg",
+		"file_size": 0,
+		"updated_at": "2015-03-20T03:14:43.000Z",
+		"created_at": "2015-03-20T03:14:43.000Z"
+	}
+}

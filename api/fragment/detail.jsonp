@@ -1,0 +1,20 @@
+tn_fragment_data_result({
+	"version": 0.1,
+	"deskVersion": 0.1,
+	"slices": [{
+		"templateId": "001-header/t-a-02-01",
+		"themeColor": "#f96e57",
+		"editables": {
+			"richtext0": {
+				"type": "ed-type-rich-text",
+				"text": "<section>test of title</section>",
+				"textAlign": "center",
+				"fontSize": "1em",
+				"fontFamily": "inherit",
+				"fontStyle": "normal",
+				"color": "white",
+				"backgroundColor": "transparent"
+			}
+		}
+	}]
+})
